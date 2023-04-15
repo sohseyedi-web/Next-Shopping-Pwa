@@ -4,6 +4,7 @@ import Head from "next/head";
 import Container from './../container/Container';
 import SubHeader from './../components/Layout/subHeader';
 import Footer from "@/components/Layout/Footer";
+import Products from "@/components/Layout/Products";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
           <Intro/>
           <div className="max-w-7xl mx-auto">
             <SubHeader/>
+            <Products/>
           </div>
           <Footer/>
         </section>

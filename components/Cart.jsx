@@ -1,4 +1,4 @@
-import IImfg from "../public/images/hero.png";
+import IImfg from "@/public/images/hero.png";
 import Back from "./Back";
 import Image from "next/image";
 

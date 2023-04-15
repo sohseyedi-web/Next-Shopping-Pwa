@@ -1,5 +1,9 @@
+import Intro from "@/components/Layout/Intro";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Container from './../container/Container';
+import SubHeader from './../components/Layout/subHeader';
+import Footer from "@/components/Layout/Footer";
 
 
 export default function Home() {
@@ -11,7 +15,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
+      <Container>
+        <section className="pt-20">
+          <Intro/>
+          <div className="max-w-7xl mx-auto">
+            <SubHeader/>
+          </div>
+          <Footer/>
+        </section>
+      </Container>
     </>
   );
 }

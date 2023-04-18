@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-gray-50 container py-4 px-2 fixed top-0 left-0 z-30">
+      <nav className="bg-gray-50 w-full py-4 px-2 fixed top-0 left-0 z-30">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <h3 className="lg:text-3xl md:text-2xl text-2xl text-blue-600 font-semibold tracking-[4px] m-0">
             NikeShop

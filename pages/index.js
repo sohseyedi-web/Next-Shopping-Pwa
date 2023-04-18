@@ -1,13 +1,15 @@
 import Intro from "@/components/Layout/Intro";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
-import Container from './../container/Container';
-import SubHeader from './../components/Layout/subHeader';
+import Container from "./../container/Container";
+import SubHeader from "./../components/Layout/subHeader";
 import Footer from "@/components/Layout/Footer";
 import Products from "@/components/Layout/Products";
+import axios from "axios";
+
+export default function Home({ product }) {
 
 
-export default function Home() {
   return (
     <>
       <Head>
@@ -18,14 +20,26 @@ export default function Home() {
       </Head>
       <Container>
         <section className="pt-20">
-          <Intro/>
+          <Intro />
           <div className="max-w-7xl mx-auto">
-            <SubHeader/>
-            <Products/>
+            <SubHeader />
+            <Products product={product}/>
           </div>
-          <Footer/>
+          <Footer />
         </section>
       </Container>
     </>
   );
+}
+
+export async function getStaticProps(context) {
+  const { data } = await axios.get("http://localhost:3000/api/product");
+
+  console.log(data);
+
+  return {
+    props: {
+      product: data,
+    },
+  };
 }

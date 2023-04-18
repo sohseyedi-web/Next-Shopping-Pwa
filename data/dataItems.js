@@ -1,4 +1,4 @@
-import {v4 as uuidv4} from 'uuid'
+import { v4 as uuidv4 } from "uuid";
 
 import One from "../public/images/product1.png";
 import Two from "../public/images/product2.png";
@@ -14,12 +14,11 @@ import Eleven from "../public/images/product11.png";
 import Twele from "../public/images/product12.png";
 import Thirteen from "../public/images/product13.png";
 
-
 export const productList = [
   {
     id: uuidv4(),
     img: One,
-    name: "نایک مدل ستاره",
+    name: "Nike Start",
     price: 150,
     gender: "men",
     size: ["41", "42", "43", "44"],
@@ -29,7 +28,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Two,
-    name: "نایک مدل ایر فورس",
+    name: "Nike Air Force",
     price: 130,
     gender: "men",
     size: ["42", "43", "44"],
@@ -39,7 +38,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Three,
-    name: "نایک مدل آداپت رز",
+    name: "Nike Adapt Rose",
     price: 125,
     gender: "women",
     size: ["40", "41", "42", "43", "44"],
@@ -49,7 +48,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Four,
-    name: "نایک مدل پریمیوم",
+    name: "Nike Premium",
     price: 200,
     gender: "men",
     size: ["42", "43", "44"],
@@ -59,7 +58,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Five,
-    name: "نایک مدل آداپت پرو",
+    name: "Nike Adapt Pro",
     price: 100,
     gender: "men",
     size: ["42", "43", "44"],
@@ -69,7 +68,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Six,
-    name: "نایک مدل جردن پی ار 3",
+    name: "Nike Jordan PR-3",
     price: 140,
     gender: "men",
     size: ["41", "43", "44"],
@@ -79,7 +78,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Seven,
-    name: "نایک مدل اکونومی",
+    name: "Nike Economy",
     price: 90,
     gender: "men",
     size: ["40", "41", "42", "43"],
@@ -89,7 +88,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Eight,
-    name: "نایک مدل زوم",
+    name: "Nike Zoom",
     price: 100,
     gender: "men",
     size: ["40", "41", "42", "43", "44"],
@@ -99,7 +98,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Nine,
-    name: "نایک مدل کیتی",
+    name: "Nike Kitty",
     price: 105,
     gender: "women",
     size: ["40", "41", "42", "43", "44"],
@@ -109,7 +108,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Ten,
-    name: "نایک مدل داینامیک",
+    name: "Nike Dynamic",
     price: 120,
     gender: "women",
     size: ["40", "41", "42", "43", "44"],
@@ -119,7 +118,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Eleven,
-    name: "نایک مدل بلک مکس",
+    name: "Nike Black Max",
     price: 200,
     gender: "men",
     size: ["42"],
@@ -129,7 +128,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Twele,
-    name: "نایک مدل جردن 11",
+    name: "Nike Jordan Eleven",
     price: 120,
     gender: "men",
     size: ["40", "41", "42", "43", "44"],
@@ -139,7 +138,7 @@ export const productList = [
   {
     id: uuidv4(),
     img: Thirteen,
-    name: " نایک مدل تاکی",
+    name: "Nike Taki",
     price: 120,
     gender: "men",
     size: ["40", "41", "42", "43", "44"],

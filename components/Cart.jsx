@@ -1,8 +1,13 @@
 import IImfg from "@/public/images/hero.png";
 import Back from "./Back";
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 const Cart = ({ show, setShow }) => {
+  const { productItem } = useSelector((state) => state.nike);
+
+  console.log(productItem);
+
   return (
     <>
       <Back open={show} setOpen={setShow} />

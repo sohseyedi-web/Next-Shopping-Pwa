@@ -20,11 +20,9 @@ const Intro = () => {
         slidesPerView={1}
         loop={true}
         navigation
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
-        {slideData.map((item) => (
-          <SwiperSlide>
+        {slideData.map((item , i) => (
+          <SwiperSlide key={i}>
             <Image src={item} alt={"nike"} className="mx-auto" />
           </SwiperSlide>
         ))}

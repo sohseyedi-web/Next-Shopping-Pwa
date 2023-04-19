@@ -22,7 +22,7 @@ export default function Home({ product }) {
           <Intro />
           <div className="max-w-7xl mx-auto">
             <SubHeader />
-            <Products product={product}/>
+            <Products product={product} key={product}/>
           </div>
           <Footer />
         </section>

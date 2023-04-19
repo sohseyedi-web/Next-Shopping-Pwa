@@ -3,9 +3,15 @@ import * as RiIcon from "react-icons/ri";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addItemTocart } from "@/store/reducer";
+import { toast } from "react-hot-toast";
 
 const Products = ({ product }) => {
   const dispatch = useDispatch();
+
+  const addItem = (product) => {
+    dispatch(addItemTocart(product));
+    toast.success("Added to cart");
+  };
 
   return (
     <section className="py-16 text-center">
@@ -57,7 +63,7 @@ const Products = ({ product }) => {
                 </div>
               </div>
               <button
-                onClick={() => dispatch(addItemTocart(product))}
+                onClick={() => addItem(pro)}
                 className="w-full bg-blue-600 border-none text-white rounded-md py-2"
               >
                 Add To Cart

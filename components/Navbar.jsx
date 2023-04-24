@@ -2,11 +2,13 @@ import Link from "next/link";
 import { useState } from "react";
 import * as RiIcon from "react-icons/ri";
 import Sidebar from "./Sidebar";
-import Cart from './Cart';
+import Cart from "./Cart";
+import { useSelector } from "react-redux";
 
 function Navbar() {
   const [showSide, setShowSide] = useState(false);
   const [showCart, setShowCart] = useState(false);
+  const { productItem } = useSelector((state) => state.nike);
   // const [color, setColor] = useState(false);
 
   // const changeBgcolor = () => {
@@ -28,9 +30,14 @@ function Navbar() {
           <div className="flex items-center gap-x-3">
             <div
               onClick={() => setShowCart(!showCart)}
-              className="cursor-pointer flex items-center justify-center border w-[45px] h-[45px] border-indigo-300 text-blue-500 rounded-full"
+              className="relative cursor-pointer flex items-center justify-center border w-[45px] h-[45px] border-indigo-300 text-blue-500 rounded-full"
             >
               <RiIcon.RiShoppingCartLine size={25} />
+              {productItem.length ? (
+                <span className="absolute -top-1 -right-0  rounded-full bg-blue-600 text-white text-center w-[20px] h-[20px]">
+                  {productItem.length}
+                </span>
+              ) : null}
             </div>
             <Link
               href={"/auth"}

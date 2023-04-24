@@ -10,8 +10,11 @@
   font-family: Shabnam, sans-serif;
 }
 
-body {
-  background-color: #fefefe;
+@layer base {
+  body {
+    @apply bg-[#fefefe];
+    @apply dark:bg-[#252525] dark:text-gray-50 bg-gray-50 text-gray-900
+  }
 }
 
 .mySwiper .swiper-button-next,

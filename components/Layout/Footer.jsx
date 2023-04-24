@@ -3,7 +3,7 @@ import * as RiIcon from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="py-7 bg-gray-200 ">
+    <footer className="py-7 bg-gray-200 dark:bg-slate-900">
       <div className="max-w-7xl mx-auto flex items-center flex-col">
         <div className="flex items-center gap-x-6">
           <Link href={"/"} className="text-xl text-blue-600 font-semibold">
@@ -19,13 +19,13 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex items-center gap-x-3 mt-5">
-          <a className="text-slate-900 text-xl" href="/">
+          <a className="text-slate-900 dark:text-white text-xl" href="/">
             <RiIcon.RiTwitterLine size={26} />
           </a>
-          <a className="text-slate-900 text-xl" href="/">
+          <a className="text-slate-900 dark:text-white text-xl" href="/">
             <RiIcon.RiYoutubeLine size={26} />
           </a>
-          <a className="text-slate-900 text-xl" href="/">
+          <a className="text-slate-900 dark:text-white text-xl" href="/">
             <RiIcon.RiInstagramLine size={26} />
           </a>
         </div>

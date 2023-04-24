@@ -30,7 +30,7 @@ const Cart = ({ show, setShow }) => {
       <aside
         className={`${
           show ? "left-0" : "-left-60"
-        } fixed top-0  bg-slate-50  h-screen w-60 border-l border-solid border-gray-300 z-50 transition-all duration-200`}
+        } fixed top-0  bg-slate-50 dark:bg-slate-950 dark:border-gray-950 h-screen w-60 border-l border-solid border-gray-300 z-50 transition-all duration-200`}
       >
         <div className="flex flex-col py-1 px-3">
           <h4 className="text-xl m-0 pb-2 border-b border-b-black">

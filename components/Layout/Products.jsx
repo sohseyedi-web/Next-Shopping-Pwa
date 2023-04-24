@@ -19,7 +19,7 @@ const Products = ({ product }) => {
       <div className="my-5 flex items-center justify-between flex-wrap gap-y-5">
         {product.results.map((pro) => (
           <div
-            className="rounded-md shadow-md lg:w-[23%] md:w-[45%] sm:[w-90%] w-[90%] mx-auto lg:m-0 border border-gray-300"
+            className="rounded-md shadow-md lg:w-[23%] md:w-[45%] sm:[w-90%] w-[90%] mx-auto lg:m-0 border border-gray-300 dark:border-black"
             key={pro.id}
           >
             {/* background image */}
@@ -28,7 +28,7 @@ const Products = ({ product }) => {
               style={{
                 background: `linear-gradient(to right , ${pro.oneColor} , ${pro.twoColor})`,
               }}
-              className={`h-[200px] shadow-lg`}
+              className={`h-[200px] shadow-lg rounded-t-md`}
             >
               <Image
                 src={pro.img}

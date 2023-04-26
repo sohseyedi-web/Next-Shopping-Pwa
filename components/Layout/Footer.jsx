@@ -14,20 +14,23 @@ const Footer = () => {
             Products
           </Link>
           |
-          <Link href={"/support"} className="text-xl text-blue-600 font-semibold">
+          <Link
+            href={"/support"}
+            className="text-xl text-blue-600 font-semibold"
+          >
             Support
           </Link>
         </div>
         <div className="flex items-center gap-x-3 mt-5">
-          <a className="text-slate-900 dark:text-white text-xl" href="/">
+          <Link className="text-slate-900 dark:text-white text-xl" href="/">
             <RiIcon.RiTwitterLine size={26} />
-          </a>
-          <a className="text-slate-900 dark:text-white text-xl" href="/">
+          </Link>
+          <Link className="text-slate-900 dark:text-white text-xl" href="/">
             <RiIcon.RiYoutubeLine size={26} />
-          </a>
-          <a className="text-slate-900 dark:text-white text-xl" href="/">
+          </Link>
+          <Link className="text-slate-900 dark:text-white text-xl" href="/">
             <RiIcon.RiInstagramLine size={26} />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

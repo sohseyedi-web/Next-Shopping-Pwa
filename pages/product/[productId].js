@@ -47,7 +47,7 @@ const ProductId = ({ product }) => {
               <span className="font-medium text-xl">Sizes</span>{" "}
               :
               {product.results.size.map((i) => (
-                <span className="cursor-pointer p-1 bg-blue-500 text-white rounded-md text-sm">
+                <span key={i} className="cursor-pointer p-1 bg-blue-500 text-white rounded-md text-sm">
                   {i}
                 </span>
               ))}

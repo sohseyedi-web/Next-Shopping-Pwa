@@ -14,7 +14,7 @@ const Footer = () => {
             Products
           </Link>
           |
-          <Link href={"/"} className="text-xl text-blue-600 font-semibold">
+          <Link href={"/support"} className="text-xl text-blue-600 font-semibold">
             Support
           </Link>
         </div>

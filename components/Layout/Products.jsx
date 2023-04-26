@@ -47,7 +47,10 @@ const Products = ({ product }) => {
               </Link>
               <div className="flex items-center gap-x-4 my-2">
                 {pro.size.map((i) => (
-                  <span className="p-1 bg-blue-500 text-white rounded-md text-sm">
+                  <span
+                    key={i}
+                    className="p-1 bg-blue-500 text-white rounded-md text-sm"
+                  >
                     {i}
                   </span>
                 ))}

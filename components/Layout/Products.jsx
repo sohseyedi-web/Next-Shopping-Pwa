@@ -70,9 +70,7 @@ const Products = ({ product }) => {
                 onClick={() => addItem(pro)}
                 className="w-full bg-blue-600 border-none text-white rounded-md py-2"
               >
-                {checkInList(productItem, pro)
-                  ? `Added In Cart`
-                  : "Add To Cart"}
+                Add To Cart
               </button>
             </div>
           </div>

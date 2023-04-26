@@ -1,5 +1,7 @@
-import { productList } from '@/data/dataItems';
+import { productList } from "@/data/dataItems";
 
 export default async function handler(req, res) {
-  res.status(200).json({ results: productList });
+  if (req.method === "GET") {
+    res.status(200).json({ results: productList });
+  }
 }

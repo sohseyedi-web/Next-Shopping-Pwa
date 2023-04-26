@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
-
 import One from "../public/images/product1.png";
 import Two from "../public/images/product2.png";
 import Three from "../public/images/product3.png";
@@ -11,12 +9,12 @@ import Eight from "../public/images/product8.png";
 import Nine from "../public/images/product9.png";
 import Ten from "../public/images/product10.png";
 import Eleven from "../public/images/product11.png";
-import Twele from "../public/images/product12.png";
+import Twelve from "../public/images/product12.png";
 import Thirteen from "../public/images/product13.png";
 
 export const productList = [
   {
-    id: uuidv4(),
+    id: 1,
     img: One,
     name: "Nike Start",
     price: 150,
@@ -26,7 +24,7 @@ export const productList = [
     twoColor: "#eab308",
   },
   {
-    id: uuidv4(),
+    id: 2,
     img: Two,
     name: "Nike Air Force",
     price: 130,
@@ -36,7 +34,7 @@ export const productList = [
     twoColor: "#10b981",
   },
   {
-    id: uuidv4(),
+    id: 3,
     img: Three,
     name: "Nike Adapt Rose",
     price: 125,
@@ -46,7 +44,7 @@ export const productList = [
     twoColor: "#181b21",
   },
   {
-    id: uuidv4(),
+    id: 4,
     img: Four,
     name: "Nike Premium",
     price: 200,
@@ -56,7 +54,7 @@ export const productList = [
     twoColor: "#f59e0b",
   },
   {
-    id: uuidv4(),
+    id: 5,
     img: Five,
     name: "Nike Adapt Pro",
     price: 100,
@@ -66,7 +64,7 @@ export const productList = [
     twoColor: "#eab308",
   },
   {
-    id: uuidv4(),
+    id: 6,
     img: Six,
     name: "Nike Jordan PR-3",
     price: 140,
@@ -76,7 +74,7 @@ export const productList = [
     twoColor: "#06b6d4",
   },
   {
-    id: uuidv4(),
+    id: 7,
     img: Seven,
     name: "Nike Economy",
     price: 90,
@@ -86,7 +84,7 @@ export const productList = [
     twoColor: "#4f46e5",
   },
   {
-    id: uuidv4(),
+    id: 8,
     img: Eight,
     name: "Nike Zoom",
     price: 100,
@@ -96,7 +94,7 @@ export const productList = [
     twoColor: "#3b82f6",
   },
   {
-    id: uuidv4(),
+    id: 9,
     img: Nine,
     name: "Nike Kitty",
     price: 105,
@@ -106,7 +104,7 @@ export const productList = [
     twoColor: "#7c2d12",
   },
   {
-    id: uuidv4(),
+    id: 10,
     img: Ten,
     name: "Nike Dynamic",
     price: 120,
@@ -116,7 +114,7 @@ export const productList = [
     twoColor: "#3730a3",
   },
   {
-    id: uuidv4(),
+    id: 11,
     img: Eleven,
     name: "Nike Black Max",
     price: 200,
@@ -126,8 +124,8 @@ export const productList = [
     twoColor: "#252525",
   },
   {
-    id: uuidv4(),
-    img: Twele,
+    id: 12,
+    img: Twelve,
     name: "Nike Jordan Eleven",
     price: 120,
     gender: "men",
@@ -136,7 +134,7 @@ export const productList = [
     twoColor: "#84cc16",
   },
   {
-    id: uuidv4(),
+    id: 13,
     img: Thirteen,
     name: "Nike Taki",
     price: 120,

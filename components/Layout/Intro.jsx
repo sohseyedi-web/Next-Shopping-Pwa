@@ -29,7 +29,7 @@ const Intro = () => {
       >
         {slideData.map((item, i) => (
           <SwiperSlide key={i}>
-            <Image src={item} alt={"nike"} className="mx-auto" />
+            <Image src={item} alt={"nike"} className="mx-auto cursor-pointer" />
           </SwiperSlide>
         ))}
       </Swiper>

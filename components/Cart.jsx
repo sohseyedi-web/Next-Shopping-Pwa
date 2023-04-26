@@ -1,4 +1,3 @@
-import IImfg from "@/public/images/hero.png";
 import Back from "./Back";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";

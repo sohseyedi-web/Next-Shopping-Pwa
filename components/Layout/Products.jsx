@@ -39,7 +39,7 @@ const Products = ({ product }) => {
             {/* background image */}
             <div className="py-3 px-2 text-left">
               <Link
-                href={`/products/${pro.id}`}
+                href={`/product/${pro.id}`}
                 className="hover:text-blue-400 transition-all duration-150 hover:duration-150"
               >
                 <h3 className="my-1 font-bold text-xl">{pro.name}</h3>
@@ -57,7 +57,7 @@ const Products = ({ product }) => {
                   <button className="mr-2">
                     <RiIcon.RiHeart3Line size={25} />
                   </button>
-                  <Link href={`/products/${pro.id}`} className="m-0 ">
+                  <Link href={`/product/${pro.id}`} className="m-0 ">
                     <RiIcon.RiEyeLine size={25} />
                   </Link>
                 </div>

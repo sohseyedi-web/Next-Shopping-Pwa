@@ -37,14 +37,14 @@ const Sidebar = ({ show, setShow, setTheme, currentTheme }) => {
             {currentTheme === "dark" ? (
               <div
                 onClick={() => setTheme("light")}
-                className="my-10 cursor-pointer transition-all scale-1 duration-500 hover:transition-all hover:scale-125 hover:duration-500 "
+                className="my-10 cursor-pointer transition-all ease-linear scale-1 duration-500 hover:transition-all hover:scale-125 hover:duration-500"
               >
                 <RiIcon.RiSunLine size={26} />
               </div>
             ) : (
               <div
                 onClick={() => setTheme("dark")}
-                className="my-10 cursor-pointer transition-all scale-1 duration-500 hover:transition-all hover:scale-125 hover:duration-500 "
+                className="my-10 cursor-pointer transition-all ease-linear scale-1 duration-500 hover:transition-all hover:scale-125 hover:duration-500"
               >
                 <RiIcon.RiMoonLine size={26} />
               </div>

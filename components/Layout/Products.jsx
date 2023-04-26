@@ -1,14 +1,12 @@
 import Image from "next/image";
 import * as RiIcon from "react-icons/ri";
 import Link from "next/link";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addItemTocart } from "@/store/reducer";
 import { toast } from "react-hot-toast";
-import { checkInList } from "@/utils/CheckCart";
 
 const Products = ({ product }) => {
   const dispatch = useDispatch();
-  const { productItem } = useSelector((state) => state.nike);
   const addItem = (product) => {
     dispatch(addItemTocart(product));
     toast.success("Added to cart");

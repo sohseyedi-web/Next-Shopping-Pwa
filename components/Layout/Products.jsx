@@ -5,23 +5,29 @@ import { useDispatch } from "react-redux";
 import { addItemTocart } from "@/store/reducer";
 import { toast } from "react-hot-toast";
 
-const Products = ({ product }) => {
+
+
+const Products = ({products}) => {
+  
+
+
   const dispatch = useDispatch();
-  const addItem = (product) => {
-    dispatch(addItemTocart(product));
+  const addItem = (pro) => {
+    dispatch(addItemTocart(pro));
     toast.success("Added to cart");
   };
+
+  console.log(products.productList);
 
   return (
     <section className="py-16 text-center">
       <h3 className="my-2 font-semibold text-blue-600 text-4xl">Products</h3>
       <div className="my-5 flex items-center justify-between flex-wrap gap-y-5">
-        {product.results.map((pro) => (
+        {products.productList.map((pro) => (
           <div
             className="rounded-md shadow-md lg:w-[23%] md:w-[45%] sm:[w-90%] w-[90%] mx-auto lg:m-0 border border-gray-300 dark:border-black"
             key={pro.id}
           >
-            {/* background image */}
 
             <div
               style={{
@@ -35,7 +41,6 @@ const Products = ({ product }) => {
                 className="h-full object-contain px-2 rounded-md"
               />
             </div>
-            {/* background image */}
             <div className="py-3 px-2 text-left">
               <Link
                 href={`/product/${pro.id}`}
@@ -79,3 +84,6 @@ const Products = ({ product }) => {
 };
 
 export default Products;
+
+
+

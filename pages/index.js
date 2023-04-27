@@ -6,9 +6,8 @@ import Footer from "@/components/Layout/Footer";
 import Products from "@/components/Layout/Products";
 import axios from "axios";
 
-export default function Home({ product }) {
 
-
+export default function Home({products}) {
   return (
     <>
       <Head>
@@ -22,7 +21,7 @@ export default function Home({ product }) {
           <Intro />
           <div className="max-w-7xl mx-auto">
             <SubHeader />
-            <Products product={product} key={product.id}/>
+            <Products products={products}/>
           </div>
           <Footer />
         </section>
@@ -31,13 +30,14 @@ export default function Home({ product }) {
   );
 }
 
-export async function getStaticProps() {
-  const { data } = await axios.get("http://localhost:3000/api/product");
 
+
+export async function getServerSideProps() {
+  const { data } = await axios.get("http://localhost:3000/api/product");
 
   return {
     props: {
-      product: data,
+      products: data,
     },
   };
 }
